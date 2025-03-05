@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penjualan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8e0ec;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            background-color: rgb(101, 167, 208);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(101, 167, 208);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: rgb(101, 167, 208);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Penjualan</h2>
+        <label>Produk</label>
+        <input type="text" placeholder="Masukkan nama produk">
+        <label>Jumlah</label>
+        <input type="number" placeholder="Masukkan jumlah">
+        <label>Harga</label>
+        <input type="text" placeholder="Masukkan harga">
+        <button>Tambahkan</button>
+    </div>
+
+    <div class="container">
+        <h2>Data Penjualan Bulanan</h2>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Produk</th>
+                <th>Jumlah</th>
+                <th>Harga Total</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sepatu</td>
+                <td>50</td>
+                <td>Rp 25.000.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tas</td>
+                <td>30</td>
+                <td>Rp 15.000.000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jam Tangan</td>
+                <td>20</td>
+                <td>Rp 10.000.000</td>
+            </tr>
+            <tr>
+                <th colspan="2">Total Penjualan</th>
+                <th>100</th>
+                <th>Rp 50.000.000</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
